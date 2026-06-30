@@ -1,0 +1,252 @@
+/* --- CSS --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #2b2b2b;
+    line-height: 1.5;
+}
+
+.contenedor {
+    max-width: 720px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #1d4ed8;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #1d4ed8;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 6px;
+    margin-top: 30px;
+}
+
+.fecha {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* --- Formulario --- */
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #374151;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #f9fafb;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15);
+    background-color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.opciones-radio,
+.opciones-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    padding: 12px 16px;
+}
+
+.opciones-radio label,
+.opciones-checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-weight: 400;
+    color: #2b2b2b;
+    cursor: pointer;
+}
+
+.opciones-radio input,
+.opciones-checkbox input {
+    accent-color: #1d4ed8;
+    width: auto;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 12px;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #1e40af;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Reporte --- */
+
+.acciones {
+    display: flex;
+    gap: 16px;
+    margin: 15px 0 20px;
+}
+
+.tabla-reporte {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.tabla-reporte th,
+.tabla-reporte td {
+    border: 1px solid #e5e7eb;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabla-reporte th {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tabla-reporte tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.tabla-reporte tr:hover {
+    background-color: #eef2ff;
+}
+
+.badge {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.badge-verde {
+    background-color: #16a34a;
+    box-shadow: 0 0 4px #16a34a;
+}
+
+.badge-rojo {
+    background-color: #dc2626;
+    box-shadow: 0 0 4px #dc2626;
+}
+
+/* --- Responsivo --- */
+
+@media (max-width: 600px) {
+    .contenedor {
+        margin: 0;
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .opciones-radio,
+    .opciones-checkbox {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .mensaje{
+    text-align:center;
+}
+
+.mensaje h2{
+    color:#1d4ed8;
+    margin-bottom:15px;
+}
+
+.mensaje p{
+    font-size:16px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 22px;
+    margin:8px;
+    background:#1d4ed8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1e40af;
+    text-decoration:none;
+}
+
+.btn-secundario{
+    background:#16a34a;
+}
+
+.btn-secundario:hover{
+    background:#15803d;
+}
+}
